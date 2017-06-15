@@ -1,0 +1,17 @@
+------------
+Instructions
+------------
+
+Select all cars with the tax value over 2000. 
+The tax value for all cars is 20% and you can write it as 0.20 in your query. 
+Multiply the price by 0.20 to get the tax value.
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM car 
+
+WHERE (PRICE * 0.20) > 2000
