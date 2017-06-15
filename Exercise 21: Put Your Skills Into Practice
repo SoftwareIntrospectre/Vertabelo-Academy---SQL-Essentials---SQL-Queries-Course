@@ -1,0 +1,23 @@
+------------
+Instructions
+------------
+
+Select all columns of those cars that:
+
+* were produced between 1999 and 2003,
+* are not Volkswagens,
+* their model begins with either 'P' or 'T',
+* have their price set.
+
+----------
+Code
+-----------
+
+SELECT * 
+
+FROM car
+
+WHERE PRODUCTION_YEAR BETWEEN 1999 AND 2003
+AND BRAND != 'V%'
+AND (MODEL LIKE 'P%' OR MODEL LIKE 'T%')
+AND PRICE IS NOT NULL
