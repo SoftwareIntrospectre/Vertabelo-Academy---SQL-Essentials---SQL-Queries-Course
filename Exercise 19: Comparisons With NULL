@@ -1,0 +1,17 @@
+------------
+Instructions
+------------
+
+Select all columns for cars whose price column is greater than or equal to zero.
+
+Note that the Opel with an unknown price is not in the result.
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM car
+
+WHERE PRICE >= 0
