@@ -1,0 +1,13 @@
+------------
+Instructions
+------------
+
+Select all columns for those cars which weren't produced in 1999.
+
+----------
+Code
+-----------
+
+SELECT * 
+FROM car 
+WHERE PRODUCTION_YEAR != 1999
