@@ -1,0 +1,13 @@
+------------
+Instructions
+------------
+
+Select all columns for those cars which were produced (column production_year) in 1999.
+
+----------
+Code
+-----------
+
+SELECT * 
+FROM car 
+WHERE PRODUCTION_YEAR = 1999
