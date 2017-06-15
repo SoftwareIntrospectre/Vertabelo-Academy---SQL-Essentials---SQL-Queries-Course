@@ -1,0 +1,16 @@
+------------
+Instructions
+------------
+
+Select vin of all cars whose model ends with an s.
+
+----------
+Code
+-----------
+
+SELECT VIN
+
+FROM car
+
+WHERE MODEL
+LIKE '%s'
