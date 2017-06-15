@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Select all cars whose price column is a NULL value.
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM car
+
+WHERE PRICE IS NULL
