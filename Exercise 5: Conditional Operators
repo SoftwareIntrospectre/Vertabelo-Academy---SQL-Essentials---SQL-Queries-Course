@@ -1,0 +1,13 @@
+------------
+Instructions
+------------
+
+Select all columns for all cars with price higher than 10 000.
+
+----------
+Code
+-----------
+
+SELECT * 
+FROM car
+WHERE PRICE > 10000
