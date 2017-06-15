@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Select vin of all cars which were produced before 2005 or whose price is below 10 000.
+
+----------
+Code
+-----------
+
+SELECT VIN
+
+FROM car
+
+WHERE PRODUCTION_YEAR < 2005 OR PRICE < 10000
