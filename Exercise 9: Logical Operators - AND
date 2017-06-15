@@ -1,0 +1,17 @@
+------------
+Instructions
+------------
+
+Select vin of all cars which were produced after 1999 and are cheaper than 7 000.
+
+----------
+Code
+-----------
+
+SELECT VIN
+
+FROM car
+
+WHERE PRODUCTION_YEAR > 1999
+
+AND PRICE < 7000
