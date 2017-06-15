@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Select all columns of all Ford cars from the table.
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM car
+
+WHERE BRAND = 'Ford'
