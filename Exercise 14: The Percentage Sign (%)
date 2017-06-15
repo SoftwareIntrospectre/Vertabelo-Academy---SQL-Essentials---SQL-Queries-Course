@@ -1,0 +1,18 @@
+------------
+Instructions
+------------
+
+Select vin, brand and model of all cars whose brand begins with an F.
+
+----------
+Code
+-----------
+
+SELECT
+VIN,
+BRAND,
+MODEL
+
+FROM car
+WHERE BRAND
+LIKE 'F%'
