@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+In our example database there is a table car, which contains information about a couple of cars.
+
+Select all data from table car and press Run and check code
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM car
