@@ -1,0 +1,17 @@
+------------
+Instructions
+------------
+
+Select vin of all cars which were produced before 1999 or after 2005 and whose price is lower than 4 000 or greater than 10 000.
+
+----------
+Code
+-----------
+
+SELECT 
+VIN
+
+FROM car
+
+WHERE (PRODUCTION_YEAR < 1999 OR PRODUCTION_YEAR > 2005)
+AND (PRICE < 4000 OR PRICE > 10000)
