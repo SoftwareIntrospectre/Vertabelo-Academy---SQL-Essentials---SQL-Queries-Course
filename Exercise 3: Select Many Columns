@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Select model and price from table car.
+
+----------
+Code
+-----------
+
+SELECT
+MODEL,
+PRICE
+
+FROM car
