@@ -1,0 +1,18 @@
+------------
+Instructions
+------------
+
+Select brand, model and production year of all cars cheaper than or equal 10 000
+
+----------
+Code
+-----------
+
+SELECT 
+BRAND,
+MODEL,
+PRODUCTION_YEAR
+
+FROM car
+
+WHERE PRICE <= 10000
