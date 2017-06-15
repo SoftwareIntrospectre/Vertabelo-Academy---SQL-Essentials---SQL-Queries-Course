@@ -1,0 +1,17 @@
+
+------------
+Instructions
+------------
+
+Select all columns for cars whose brand is 'Volk_wagen' (the underscore replaces one unknown characters).
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM car
+
+WHERE BRAND
+LIKE 'Volk_wagen'
