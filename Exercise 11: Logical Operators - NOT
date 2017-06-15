@@ -1,0 +1,18 @@
+------------
+Instructions
+------------
+
+Select vin, brand and model of all cars except for those produced between 1995 and 2005.
+
+----------
+Code
+-----------
+
+SELECT 
+VIN,
+BRAND,
+MODEL
+
+FROM car
+
+WHERE PRODUCTION_YEAR NOT BETWEEN 1999 AND 2005
