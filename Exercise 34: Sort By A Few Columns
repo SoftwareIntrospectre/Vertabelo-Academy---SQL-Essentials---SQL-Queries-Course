@@ -1,0 +1,17 @@
+------------
+Instructions
+------------
+
+Select all rows from the table employees 
+and sort them in the ascending order by the department 
+and then in the descending order by the salary.
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM employees
+
+ORDER BY DEPARTMENT ASC, SALARY DESC
