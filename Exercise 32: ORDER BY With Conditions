@@ -1,0 +1,17 @@
+------------
+Instructions
+------------
+
+Select only the rows related to the year 2011 from the table employees. Sort them by salary.
+
+----------
+Code
+-----------
+
+SELECT * 
+
+FROM employees
+
+WHERE YEAR = 2011
+
+ORDER BY SALARY
