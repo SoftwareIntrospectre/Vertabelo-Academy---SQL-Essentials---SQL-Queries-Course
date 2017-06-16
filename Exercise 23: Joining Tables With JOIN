@@ -1,0 +1,16 @@
+------------
+Instructions
+------------
+
+Use the new construction JOIN ... ON to join rows from the tables movie and director 
+in such a way that a movie is shown together with its director.
+
+----------
+Code
+-----------
+
+SELECT *
+FROM movie M
+
+JOIN director D
+ON M.DIRECTOR_ID = D.ID
