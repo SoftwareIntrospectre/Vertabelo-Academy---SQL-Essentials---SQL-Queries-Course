@@ -1,0 +1,27 @@
+------------
+Instructions
+------------
+
+Select columns title, production_year from table movie and columns name, birth_year from table director 
+in such a way that a movie is shown together with its director.
+
+Show the column birth_year as born_In. 
+Select only those movies which were filmed when their director was younger than 40 
+(i.e. the difference between production_year and birth_year must be lower than 40).
+
+----------
+Code
+-----------
+
+SELECT 
+TITLE,
+PRODUCTION_YEAR,
+NAME,
+BIRTH_YEAR AS BORN_IN
+
+FROM movie M
+
+JOIN director D
+ON M.DIRECTOR_ID = D.ID
+
+WHERE (PRODUCTION_YEAR - BIRTH_YEAR) < 40
