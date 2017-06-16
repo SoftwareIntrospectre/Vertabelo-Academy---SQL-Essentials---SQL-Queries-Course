@@ -1,0 +1,16 @@
+
+------------
+Instructions
+------------
+
+Select all columns from tables movie and director in such a way that a movie is shown together with its director.
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM movie, director
+
+WHERE movie.DIRECTOR_ID = director.ID
