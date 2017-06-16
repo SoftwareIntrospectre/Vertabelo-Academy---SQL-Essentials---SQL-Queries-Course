@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Select all columns from the table employees and sort them according to the salary.
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM employees
+
+ORDER BY SALARY
