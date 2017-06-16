@@ -1,0 +1,13 @@
+------------
+Instructions
+------------
+
+Select the column year from the table employees in such a way that each year is only shown once.
+
+----------
+Code
+-----------
+
+SELECT DISTINCT YEAR
+
+FROM employees
