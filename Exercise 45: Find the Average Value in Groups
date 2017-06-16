@@ -1,0 +1,19 @@
+------------
+Instructions
+------------
+
+Find the average salary in each department in 2015.
+
+----------
+Code
+-----------
+
+SELECT 
+DEPARTMENT,
+AVG(SALARY)
+
+FROM employees
+
+WHERE YEAR = 2015
+
+GROUP BY DEPARTMENT
