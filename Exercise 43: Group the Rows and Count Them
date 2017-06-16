@@ -1,0 +1,20 @@
+------------
+Instructions
+------------
+
+Find the number of employees in each department in the year 2013. 
+Show the department name together with the number of employees.
+
+----------
+Code
+-----------
+
+SELECT 
+DEPARTMENT,
+COUNT(*)
+
+FROM employees
+
+WHERE YEAR = 2013
+
+GROUP BY DEPARTMENT
