@@ -1,0 +1,13 @@
+------------
+Instructions
+------------
+
+Count how many different positions there are in the table employees.
+
+----------
+Code
+-----------
+
+SELECT COUNT(DISTINCT POSITION)
+
+FROM employees
