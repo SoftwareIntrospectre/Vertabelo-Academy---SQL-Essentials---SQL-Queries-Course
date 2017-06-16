@@ -1,0 +1,16 @@
+------------
+Instructions
+------------
+
+Find the sum of all salaries in the Marketing department in 2014. 
+
+----------
+Code
+-----------
+
+SELECT SUM(SALARY)
+
+FROM employees
+
+WHERE DEPARTMENT = 'Marketing'
+AND YEAR = 2014
