@@ -1,0 +1,13 @@
+------------
+Instructions
+------------
+
+Count all rows in the table employees.
+
+----------
+Code
+-----------
+
+SELECT COUNT(*)
+
+FROM employees
