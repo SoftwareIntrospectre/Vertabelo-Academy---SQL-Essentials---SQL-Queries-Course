@@ -10,10 +10,10 @@ Code
 -----------
 
 SELECT 
-D.NAME,
-M.TITLE
+NAME,
+TITLE
 
-FROM movie M
+FROM movie 
 
-JOIN director D
-ON M.DIRECTOR_ID = D.ID
+JOIN director 
+ON movie.DIRECTOR_ID = director.ID
