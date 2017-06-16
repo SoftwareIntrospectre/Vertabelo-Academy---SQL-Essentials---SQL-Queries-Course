@@ -1,0 +1,19 @@
+------------
+Instructions
+------------
+
+Select all columns from tables movie and director 
+in such a way that a movie is shown together with its director. 
+Select only those movies which were made after 2000.
+
+----------
+Code
+-----------
+
+SELECT *
+FROM movie M
+
+JOIN director D
+ON M.DIRECTOR_ID = D.ID
+
+WHERE PRODUCTION_YEAR > 2000
