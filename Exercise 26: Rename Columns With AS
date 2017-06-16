@@ -1,0 +1,20 @@
+------------
+Instructions
+------------
+
+Select director name and movie title from tables movie and director 
+in such a way that a movie is shown together with its director. 
+Rename the column title to movie_title.
+
+----------
+Code
+-----------
+
+SELECT 
+D.NAME,
+M.TITLE AS MOVIE_TITLE
+
+FROM movie M
+
+JOIN director D
+ON M.DIRECTOR_ID = D.ID
