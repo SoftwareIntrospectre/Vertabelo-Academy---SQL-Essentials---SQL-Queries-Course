@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Select all rows from the table employees and sort them in the descending order by the column last_name.
+
+----------
+Code
+-----------
+
+SELECT * 
+
+FROM employees
+
+ORDER BY LAST_NAME DESC
