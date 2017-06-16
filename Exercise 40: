@@ -1,0 +1,13 @@
+------------
+Instructions
+------------
+
+Select the highest salary from the table employees.
+
+----------
+Code
+-----------
+
+SELECT MAX(SALARY) 
+
+FROM employees
