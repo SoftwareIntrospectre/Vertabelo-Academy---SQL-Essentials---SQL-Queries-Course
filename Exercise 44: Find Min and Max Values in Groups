@@ -1,0 +1,20 @@
+------------
+Instructions
+------------
+
+Show all departments together with their lowest and highest salary in 2014.
+
+----------
+Code
+-----------
+
+SELECT 
+DEPARTMENT,
+MAX(SALARY),
+MIN(SALARY)
+
+FROM employees
+
+WHERE YEAR = 2014
+
+GROUP BY DEPARTMENT
