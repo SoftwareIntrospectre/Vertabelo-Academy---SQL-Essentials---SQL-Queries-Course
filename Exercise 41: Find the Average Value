@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Find the average salary in the table employees for the year 2013.
+
+----------
+Code
+-----------
+
+SELECT AVG(SALARY)
+
+FROM employees
+
+WHERE YEAR = 2013
