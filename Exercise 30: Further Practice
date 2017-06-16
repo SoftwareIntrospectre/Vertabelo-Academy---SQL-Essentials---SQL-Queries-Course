@@ -1,0 +1,32 @@
+------------
+Instructions
+------------
+
+Select columns id, title, production_year from table movie and columns name, birth_year from table director 
+in such a way that a movie is shown together with its director. 
+Show the column birth_year as born_in and the column production_year as produced_in. 
+Select only those movies:
+
+  * whose title contains a letter 'a' and which were filmed after 2000, or
+
+  * whose director was born between 1945 and 1995.
+
+----------
+Code
+-----------
+
+SELECT
+M.ID,
+M.TITLE,
+M.PRODUCTION_YEAR AS PRODUCED_IN,
+D.NAME,
+D.BIRTH_YEAR AS BORN_IN
+
+FROM director D
+
+JOIN movie M
+ON D.ID = M.DIRECTOR_ID
+
+WHERE TITLE LIKE '%a%'
+AND (PRODUCTION_YEAR > 2000)
+OR (BIRTH_YEAR BETWEEN 1945 AND 1995)
