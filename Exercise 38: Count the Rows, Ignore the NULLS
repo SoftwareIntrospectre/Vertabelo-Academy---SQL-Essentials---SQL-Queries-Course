@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Check how many non-NULL values in the column position there are in the table employees.
+
+----------
+Code
+-----------
+
+SELECT COUNT(POSITION)
+
+FROM employees
+
+WHERE POSITION IS NOT NULL
