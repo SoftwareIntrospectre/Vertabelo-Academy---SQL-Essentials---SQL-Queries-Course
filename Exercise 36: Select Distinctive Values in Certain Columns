@@ -1,0 +1,16 @@
+------------
+Instructions
+------------
+Check what positions there are in every department. 
+In order to do that, select the columns department and position from the table employees and eliminate duplicates.
+
+
+----------
+Code
+-----------
+
+SELECT DISTINCT
+DEPARTMENT,
+POSITION
+
+FROM employees
