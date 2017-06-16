@@ -1,0 +1,18 @@
+------------
+Instructions
+------------
+Select all columns from tables movie and director 
+in such a way that a movie is shown together with its director. 
+Select only those movies which were directed by Steven Spielberg.
+
+----------
+Code
+-----------
+
+SELECT *
+FROM director D
+
+JOIN movie M
+ON D.ID = M.DIRECTOR_ID
+
+WHERE D.NAME = 'Steven Spielberg'
