@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Join the two tables: student and room so that each student is shown together with the room they live in. Select all columns.
+
+----------
+Code
+-----------
+
+SELECT * 
+FROM student 
+
+JOIN room 
+ON student.room_id = room.id
