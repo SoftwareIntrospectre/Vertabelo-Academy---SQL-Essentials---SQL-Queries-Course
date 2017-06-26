@@ -1,0 +1,20 @@
+------------
+Instructions
+------------
+
+Find the average salary for each employee. 
+Show the last name, the first name and the average salary. 
+Group the table by the last name and the first name.
+
+----------
+Code
+-----------
+
+SELECT 
+AVG(SALARY),
+LAST_NAME,
+FIRST_NAME
+
+FROM employees
+
+GROUP BY LAST_NAME, FIRST_NAME
