@@ -1,0 +1,25 @@
+------------
+Instructions
+------------
+
+We want to know who lives with the student Jack Pearson in the same room. 
+Use self-joining to show all the columns for the student Jack Pearson together with all the columns 
+for each student living with him in the same room.
+
+Remember to exclude the Jack Pearson himself from the result!
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM student AS s1
+
+JOIN student AS s2
+ON s1.room_id = s2.room_id
+
+WHERE s1.name = 'Jack Pearson'
+AND s1.id != s2.id
+
+/* This self JOIN is used to compare items from the same table, then return the desired result from that one table. */
