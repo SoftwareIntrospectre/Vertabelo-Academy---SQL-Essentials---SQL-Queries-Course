@@ -1,0 +1,17 @@
+------------
+Instructions
+------------
+
+Use the full name RIGHT OUTER JOIN to show all the kettles together with their rooms (even if there is no room assigned).
+
+----------
+Code
+-----------
+
+SELECT * 
+FROM room
+
+RIGHT OUTER JOIN equipment
+ON room.id = equipment.room_id
+
+WHERE equipment.name = 'kettle'
