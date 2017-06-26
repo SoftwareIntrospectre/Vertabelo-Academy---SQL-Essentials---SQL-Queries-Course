@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Show all rows from the table student. If a student is assigned to a room, show the room as well.
+
+----------
+Code
+-----------
+
+SELECT * 
+FROM student
+
+LEFT JOIN room
+ON student.room_id = room.id
