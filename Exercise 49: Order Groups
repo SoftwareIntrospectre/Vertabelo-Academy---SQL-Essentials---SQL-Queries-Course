@@ -1,0 +1,22 @@
+------------
+Instructions
+------------
+
+Sort the employees according to their summary salaries in the company. 
+Greatest values should appear first. 
+Show the last name, the first name and the sum.
+
+----------
+Code
+-----------
+
+SELECT 
+LAST_NAME,
+FIRST_NAME,
+SUM(SALARY)
+
+FROM employees
+
+GROUP BY LAST_NAME, FIRST_NAME
+
+ORDER BY SUM(SALARY) DESC
