@@ -1,0 +1,16 @@
+------------
+Instructions
+------------
+
+Select all pieces of equipment together with room they are assigned to. 
+Show each piece of equipment even if it isn't assigned to a room.
+
+----------
+Code
+-----------
+
+SELECT * 
+FROM equipment
+
+LEFT JOIN room
+ON equipment.room_id = room.id
