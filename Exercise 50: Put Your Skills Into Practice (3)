@@ -1,0 +1,29 @@
+------------
+Instructions
+------------
+
+Show the columns last_name and first_name from the table employees together with each person's average salary 
+and the number of years they (have) worked in the company.
+
+Use the following aliases: average_salary for each person's average salary and years_worked for the number of years worked in the company. 
+Show only such employees who (have) spent more than 2 years in the company. 
+Order the results according to the average salary in the descending order.
+
+----------
+Code
+-----------
+
+SELECT
+LAST_NAME,
+FIRST_NAME,
+AVG(SALARY) AS AVERAGE_SALARY,
+COUNT(*) AS YEARS_WORKED
+
+FROM employees
+
+GROUP BY LAST_NAME, FIRST_NAME
+HAVING COUNT(*) > 2
+ORDER BY AVERAGE_SALARY DESC
+
+/* In this case: I use "HAVING" because I want to return the columns after the calculations have been done, then limit the aggregated rows. 
+Using a "WHERE" clause would have limited rows before the calculations. */
