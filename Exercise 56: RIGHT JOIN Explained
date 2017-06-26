@@ -1,0 +1,17 @@
+------------
+Instructions
+------------
+
+For each student show student data and a room the student lives in. 
+Show also rooms with no students assigned. 
+Use a RIGHT JOIN.
+
+----------
+Code
+-----------
+
+SELECT * 
+FROM student
+
+RIGHT JOIN room
+ON student.room_id = room.id
