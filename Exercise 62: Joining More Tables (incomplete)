@@ -1,0 +1,21 @@
+------------
+Instructions
+------------
+
+The challenge is as follows: for each room with 2 beds where there actually are 2 students, 
+we want to show one row which contains the following columns:
+
+    the name of the first student,
+    the name of the second student and
+    the room number.
+
+Don't change any column names. Each pair of students should only be shown once. 
+The student whose name comes first in the alphabet should be shown first.
+
+A small hint: in terms of SQL, "first in the alphabet" means "smaller than" for text values.
+
+----------
+Code
+-----------
+
+-- https://academy.vertabelo.com/course/sql-queries/joins/aliases/join-many-tables
