@@ -1,0 +1,22 @@
+------------
+Instructions
+------------
+
+Find such departments where the average salary in 2012 was higher than 3000. 
+Show the department name with the average salary.
+
+----------
+Code
+-----------
+
+SELECT 
+DEPARTMENT,
+AVG(SALARY)
+
+FROM employees
+
+WHERE YEAR = 2012
+
+GROUP BY DEPARTMENT 
+
+HAVING AVG(SALARY) > 3000
