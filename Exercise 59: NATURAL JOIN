@@ -12,3 +12,5 @@ SELECT *
 FROM student
 
 NATURAL JOIN room
+
+/* This is an implicit JOIN that lets SQL decide how to join the tables. This is convenient, but probably isn't the best way to do it. */
