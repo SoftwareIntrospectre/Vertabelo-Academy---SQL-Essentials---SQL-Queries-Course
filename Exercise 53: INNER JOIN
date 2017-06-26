@@ -1,0 +1,16 @@
+------------
+Instructions
+------------
+
+Now, use the full name INNER JOIN to join the tables room and equipment 
+so that each piece of equipment is shown together with its room.
+
+----------
+Code
+-----------
+
+SELECT * 
+FROM equipment 
+
+INNER JOIN room 
+ON equipment.room_id = room.id
