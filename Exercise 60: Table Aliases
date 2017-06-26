@@ -1,0 +1,21 @@
+------------
+Instructions
+------------
+
+Use INNER JOIN on the tables room and equipment so that all pieces of equipment are shown their rooms. Use table aliases r and e. 
+Select the columns id and name from the table equipment as well as room_number and beds from the table room.
+
+----------
+Code
+-----------
+
+SELECT
+e.id,
+e.name,
+r.room_number,
+r.beds
+
+FROM room r
+
+INNER JOIN equipment e
+ON r.id = e.room_id
