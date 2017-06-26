@@ -1,0 +1,24 @@
+------------
+Instructions
+------------
+
+Find such employees who (have) spent more than 2 years in the company. 
+Select their last name and first name together with the number of years worked.
+
+----------
+Code
+-----------
+
+SELECT
+LAST_NAME,
+FIRST_NAME,
+COUNT(*)
+
+FROM employees
+
+GROUP BY LAST_NAME, FIRST_NAME
+
+HAVING COUNT(*) > 2
+
+/* In this case, "COUNT(*)" refers to the number of times this record appears in the system. This DB has one employee record per year, 
+thus "COUNT(*)" is an accurate count of number of years at the company. */
