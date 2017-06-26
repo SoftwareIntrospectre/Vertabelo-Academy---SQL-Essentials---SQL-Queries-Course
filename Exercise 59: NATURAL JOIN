@@ -13,4 +13,7 @@ FROM student
 
 NATURAL JOIN room
 
-/* This is an implicit JOIN that lets SQL decide how to join the tables. This is convenient, but probably isn't the best way to do it. */
+/* This is an implicit JOIN that lets SQL decide how to join the tables. This is convenient, but probably isn't the best way to do it. 
+It always joins columns that have the same exact name, so it wouldn't work for "id" and "room_id". They'd have to both be "room_id". 
+
+It could cause a problem to join "student.id" and "room.id", since they are syntactically the same, but the meanings are different. */
