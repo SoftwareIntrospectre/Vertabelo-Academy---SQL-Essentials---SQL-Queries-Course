@@ -1,0 +1,14 @@
+------------
+Instructions
+------------
+
+Use NATURAL JOIN on the tables student and room.
+
+----------
+Code
+-----------
+
+SELECT * 
+FROM student
+
+NATURAL JOIN room
