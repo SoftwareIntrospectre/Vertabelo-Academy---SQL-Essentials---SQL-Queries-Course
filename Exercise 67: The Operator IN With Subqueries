@@ -1,0 +1,14 @@
+------------
+Instructions
+------------
+
+Find all information about trips whose price is higher than average.
+
+----------
+Code
+-----------
+
+SELECT *
+FROM trip
+
+WHERE city_id IN (SELECT id FROM city WHERE area > 100)
