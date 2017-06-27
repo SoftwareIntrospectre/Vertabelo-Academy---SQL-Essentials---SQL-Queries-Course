@@ -1,0 +1,18 @@
+------------
+Instructions
+------------
+
+Select those trips which last shorter than any hiking_trip with the same price.
+
+----------
+Code
+-----------
+
+SELECT *
+FROM trip t
+
+WHERE days < ANY (
+  SELECT days 
+  FROM hiking_trip h
+  WHERE  t.price = h.price
+  )
