@@ -1,0 +1,14 @@
+------------
+Instructions
+------------
+
+Find all information about hiking trips with difficulty 1, 2 or 3.
+
+----------
+Code
+-----------
+
+SELECT *
+FROM hiking_trip
+
+WHERE difficulty IN (1,2,3)
