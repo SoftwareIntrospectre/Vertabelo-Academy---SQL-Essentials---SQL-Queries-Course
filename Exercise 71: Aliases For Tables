@@ -1,0 +1,18 @@
+------------
+Instructions
+------------
+
+Find all cities with the rating higher than the average rating for all cities in that specific country.
+
+----------
+Code
+-----------
+
+SELECT *
+FROM city AS rated_city
+
+WHERE rating > ALL (
+                    SELECT AVG(rating) 
+                    FROM city AS avg_city 
+                    WHERE rated_city.country_id = avg_city.country_id
+                    )
