@@ -12,4 +12,16 @@ and the column year_born from the table owner as owner_year_born.
 Code
 -----------
 
-https://academy.vertabelo.com/course/sql-queries/quiz/quiz/exercise-2
+SELECT 
+p.name,
+type,
+p.year_born AS PET_YEAR_BORN,
+o.name,
+o.year_born AS OWNER_YEAR_BORN
+
+FROM pet p
+
+JOIN owner o
+ON p.owner_id = o.id
+
+WHERE p.name LIKE 'M%'
