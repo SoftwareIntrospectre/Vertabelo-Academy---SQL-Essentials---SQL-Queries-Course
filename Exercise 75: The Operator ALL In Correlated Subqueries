@@ -12,7 +12,7 @@ SELECT *
 FROM hiking_trip AS main_hike
 
 WHERE length >= ALL (
-  					         SELECT length
-  					         FROM hiking_trip AS other_hikes
-  					         WHERE main_hike.mountain_id = other_hikes.mountain_id
+SELECT length
+FROM hiking_trip AS other_hikes
+WHERE main_hike.mountain_id = other_hikes.mountain_id
   					        )
