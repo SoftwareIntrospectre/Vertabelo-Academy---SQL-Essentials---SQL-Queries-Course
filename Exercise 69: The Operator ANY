@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Find all information about all the city trips which have the same price as any hiking trip.
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM trip
+
+WHERE price = ANY (SELECT price FROM hiking_trip)
