@@ -1,0 +1,18 @@
+------------
+Instructions
+------------
+
+Show all information about all cities which have the same area as Paris.
+
+----------
+Code
+-----------
+SELECT *
+FROM city
+
+-- returns the area, from city, with 'Paris' as the name, then returns that result to the WHERE clause for area
+WHERE area = (
+  SELECT area 
+  FROM city 
+  WHERE name = 'Paris'
+  )
