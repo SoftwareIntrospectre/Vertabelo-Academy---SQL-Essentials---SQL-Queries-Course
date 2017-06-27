@@ -18,4 +18,23 @@ A small hint: in terms of SQL, "first in the alphabet" means "smaller than" for 
 Code
 -----------
 
--- https://academy.vertabelo.com/course/sql-queries/joins/aliases/join-many-tables
+SELECT
+s1.name,
+s2.name,
+r.room_number
+
+FROM student s1
+
+--joining students for 2nd student
+JOIN student s2
+ON s1.room_id = s2.room_id
+
+-- joining room for room_number
+JOIN room r
+ON s1.room_id = r.id
+
+-- shows name that comes first in alphabetical order
+WHERE s1.name < s2.name 
+
+-- ensuring there are 2 beds for the 2 students only
+AND beds = 2
