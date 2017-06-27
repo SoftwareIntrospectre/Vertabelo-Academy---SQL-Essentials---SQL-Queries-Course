@@ -1,0 +1,16 @@
+------------
+Instructions
+------------
+
+Show students' names (column person) together with
+
+  * the number of essays they handed in (name the column number_of_essays) and
+  * their average number of points (name the column avg_points).
+
+Show only those students whose average number of points is more than 80.
+
+----------
+Code
+-----------
+
+https://academy.vertabelo.com/course/sql-queries/quiz/quiz/exercise-3
