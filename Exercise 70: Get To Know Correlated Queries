@@ -1,0 +1,20 @@
+------------
+Instructions
+------------
+Let's check if the database contains any errors in another way.
+
+Find all information about each country whose population is equal to 
+or smaller than the population of the least populated city in that specific country.
+
+----------
+Code
+-----------
+
+SELECT *
+FROM country
+
+-- compares country population to smallest city population, where the city's country_id matches the country's id
+WHERE population <= 
+					(SELECT MIN(population) 
+					 FROM city 
+					 WHERE city.country_id = country.id);
