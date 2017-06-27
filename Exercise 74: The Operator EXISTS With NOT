@@ -1,0 +1,20 @@
+------------
+Instructions
+------------
+
+Select all mountains with no hiking trips to them.
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM mountain m
+
+WHERE NOT EXISTS(
+  				       SELECT * 
+  				       FROM hiking_trip h
+  				       WHERE h.mountain_id = m.id
+  				       )
+                 
