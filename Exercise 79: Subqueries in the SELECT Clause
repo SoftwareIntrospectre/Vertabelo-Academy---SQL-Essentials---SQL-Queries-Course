@@ -1,0 +1,16 @@
+------------
+Instructions
+------------
+
+Show each mountain name together with the number of hiking trips to that mountain (name the column count).
+
+----------
+Code
+-----------
+
+SELECT name,
+(SELECT COUNT(*) 
+ FROM hiking_trip h
+ WHERE m.id = h.mountain_id) AS COUNT
+
+FROM mountain m
