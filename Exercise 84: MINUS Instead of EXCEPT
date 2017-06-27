@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Find all the years when there was at least one medal in skating but no medals in cycling. Use the keyword MINUS.
+
+----------
+Code
+-----------
+
+SELECT year FROM skating
+
+MINUS
+
+SELECT year FROM cycling
