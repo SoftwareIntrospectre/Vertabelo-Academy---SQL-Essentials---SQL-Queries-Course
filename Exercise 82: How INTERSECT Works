@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Find names of each person who has medals both in cycling and in skating.
+
+----------
+Code
+-----------
+
+SELECT person FROM cycling
+
+INTERSECT
+
+SELECT person FROM skating
