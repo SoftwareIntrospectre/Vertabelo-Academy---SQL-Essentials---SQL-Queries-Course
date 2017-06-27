@@ -1,0 +1,20 @@
+------------
+Instructions
+------------
+
+Show hiking trips together with their mountains. 
+The mountains must be at least 3000 high. 
+Select only the columns length and height.
+
+----------
+Code
+-----------
+
+SELECT length, height
+
+FROM hiking_trip h,
+(SELECT *
+ FROM mountain
+ WHERE height >= 3000) AS threeK_mountains
+ 
+ WHERE h.mountain_id = threeK_mountains.id 
