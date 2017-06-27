@@ -11,5 +11,4 @@ Code
 SELECT name
 FROM city
 
--- compare population to population in subquery
 WHERE population < (SELECT population FROM city WHERE name = 'Madrid');
