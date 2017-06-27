@@ -1,0 +1,20 @@
+------------
+Instructions
+------------
+
+Show all information about all trips to cities with their rating lower than 4.
+
+----------
+Code
+-----------
+
+SELECT *
+FROM trip
+
+-- using city_id because it's a common field between both tables, for comparison
+WHERE city_id IN (
+  				        SELECT id 
+  				        FROM city 
+  				        WHERE rating < 4
+  				        AND id = trip.city_id
+  				        )
