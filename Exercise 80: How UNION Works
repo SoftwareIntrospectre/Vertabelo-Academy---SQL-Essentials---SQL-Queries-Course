@@ -1,0 +1,17 @@
+------------
+Instructions
+------------
+
+Show all the medals for the period between 2010 and 2014 for skating and cycling. Use the UNION keyword.
+
+----------
+Code
+-----------
+
+SELECT * FROM skating
+WHERE year BETWEEN 2010 AND 2014
+
+UNION
+
+SELECT * FROM cycling
+WHERE year BETWEEN 2010 AND 2014
