@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Select all countries where there is at least one mountain.
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM country
+
+WHERE EXISTS(SELECT mountain_id FROM hiking_trip)
