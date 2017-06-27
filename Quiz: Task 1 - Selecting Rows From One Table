@@ -1,0 +1,16 @@
+------------
+Instructions
+------------
+
+Select all columns from horoscopes for Pisces and Aquarius from the years 2010 to 2014.
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM horoscope
+
+WHERE sign IN ('Pisces', 'Aquarius')
+AND year BETWEEN 2010 AND 2014
