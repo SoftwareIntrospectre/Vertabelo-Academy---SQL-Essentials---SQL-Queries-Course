@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Show all countries which have medals in cycling or skating. Use a union. Don't remove duplicates.
+
+----------
+Code
+-----------
+
+SELECT country FROM skating
+
+UNION ALL
+
+SELECT country FROM cycling
