@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Find all the countries which have a medal in cycling but not in skating.
+
+----------
+Code
+-----------
+
+SELECT country FROM cycling
+
+EXCEPT
+
+SELECT country FROM skating
