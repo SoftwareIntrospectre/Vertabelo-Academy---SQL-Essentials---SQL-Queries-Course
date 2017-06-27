@@ -1,0 +1,15 @@
+------------
+Instructions
+------------
+
+Find all information about the cities which are less populated than all countries in the database.
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM city
+
+WHERE population < ALL (SELECT population FROM country)
