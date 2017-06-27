@@ -8,4 +8,8 @@ Find all information about trips whose price is higher than average.
 Code
 -----------
 
-https://academy.vertabelo.com/course/sql-queries/subqueries/simple-subqueries/subqueries-with-functions
+SELECT *
+FROM trip
+
+-- compares price to average price
+WHERE price > (SELECT avg(price) FROM trip)
