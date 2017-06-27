@@ -1,0 +1,16 @@
+------------
+Instructions
+------------
+
+Show mountains together with their countries. The countries must have at least 50,000 residents.
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM mountain, 
+(SELECT * FROM country WHERE population > 50000) AS big_country
+
+WHERE mountain.country_id = big_country.id
