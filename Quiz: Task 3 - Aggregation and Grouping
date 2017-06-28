@@ -13,4 +13,13 @@ Show only those students whose average number of points is more than 80.
 Code
 -----------
 
-https://academy.vertabelo.com/course/sql-queries/quiz/quiz/exercise-3
+SELECT
+person,
+COUNT(person) AS number_of_essays,
+AVG(points) AS avg_points
+
+FROM essay 
+
+GROUP BY person
+
+HAVING(avg_points) > 80
