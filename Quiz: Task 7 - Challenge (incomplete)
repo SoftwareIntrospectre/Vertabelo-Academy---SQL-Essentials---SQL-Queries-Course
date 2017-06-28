@@ -19,4 +19,21 @@ Remember, you need not use all columns from all the tables here - choose them wi
 Code
 -----------
 
-https://academy.vertabelo.com/course/sql-queries/quiz/quiz/exercise-7
+SELECT
+c.id AS cus_id,
+c.name AS cus_name,
+MAX(pi.purchase_id) AS latest_purchase_id, 	-- purchase_id listed chronologically, so MAX is most recent
+SUM(pi.quantity) AS all_items_purchased
+
+FROM customer c
+
+-- connecting customer IDs to their purchases.
+JOIN purchase p
+ON c.id = p.customer_id
+
+-- connecting customer purchases to purchase details
+JOIN purchase_item pi
+ON p.id = pi.purchase_id
+
+-- only 3 customers, so grouping by their customer's IDs
+GROUP BY c.id
