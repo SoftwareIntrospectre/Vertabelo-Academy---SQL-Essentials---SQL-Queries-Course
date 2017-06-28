@@ -1,0 +1,21 @@
+------------
+Instructions
+------------
+
+Show all columns for the products which are gluten free and vegetarian at the same time.
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM gluten_free_product
+
+
+INTERSECT
+
+
+SELECT *
+
+FROM vegetarian_product
