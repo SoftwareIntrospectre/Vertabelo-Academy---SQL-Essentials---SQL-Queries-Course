@@ -1,0 +1,19 @@
+------------
+Instructions
+------------
+
+Show all columns for the prisons where there is at least one prisoner above 50 years of age.
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM prison 
+
+WHERE EXISTS(
+  SELECT * 
+  FROM prisoner 
+  WHERE prisoner.prison_id = prison.id
+  AND age > 50)
