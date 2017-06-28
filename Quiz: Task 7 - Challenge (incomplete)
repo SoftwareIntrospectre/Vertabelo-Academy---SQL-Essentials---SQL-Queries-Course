@@ -1,0 +1,22 @@
+------------
+Instructions
+------------
+
+The owner of the shop would like to see each customer's
+
+    * id (name the column cus_id),
+    
+    * name (name the column cus_name)
+    
+    * id of their latest purchase (name the column latest_purchase_id)
+    
+    * the total quantity of all flowers purchased by the customer, in all purchases, not just the last purchase 
+      (name the column all_items_purchased).
+
+Remember, you need not use all columns from all the tables here - choose them wisely.
+
+----------
+Code
+-----------
+
+https://academy.vertabelo.com/course/sql-queries/quiz/quiz/exercise-7
