@@ -1,0 +1,17 @@
+------------
+Instructions
+------------
+
+Show all coaches together with the players they train, show all columns for coaches and players. 
+Show unemployed coaches with NULLS instead of player data.
+
+----------
+Code
+-----------
+
+SELECT *
+
+FROM coach c
+
+LEFT JOIN player p
+ON c.player_id = p.id
